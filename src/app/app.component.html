@@ -4,9 +4,13 @@
     <div class="container">
       <app-todo-input></app-todo-input>
       <div class="container" style="padding: 30px">
-          <div class="list-group" *ngFor="let todo of todoService.getTodos()">
-              <app-todo-item [todo]="todo"></app-todo-item>
-          </div>
+          <ul class="list-group">
+            <div *ngFor="let todo of todoService.getTodos()">
+                <li class="list-group-item">
+                  <app-todo-item [todo]="todo"></app-todo-item>
+                </li>
+            </div>
+          </ul>
       </div>
     </div>
   </div>

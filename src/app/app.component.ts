@@ -9,6 +9,6 @@ import { Todo } from './classes/todo';
 })
 export class AppComponent {
 
-  constructor(private todoService: TodoService) {
+  constructor(public todoService: TodoService) {
   }
 }

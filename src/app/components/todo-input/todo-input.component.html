@@ -1,0 +1,9 @@
+<div class="container">
+    <form>
+        <div class="input-group input-append">
+          <span class="input-group-addon">Add Item</span>
+          <input id="msg" type="text" class="form-control" [(ngModel)]='todoText' value={{todoText}} [ngModelOptions]="{standalone: true}" />
+          <span class=" btn btn-primary input-group-addon" (click)="addTodo()">Add</span>
+        </div>
+    </form>
+</div>
